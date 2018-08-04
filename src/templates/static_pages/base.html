@@ -1,0 +1,29 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <title>Gabbar Entertainment</title>
+        <link href="{% static "css/layout.css" %}" rel="stylesheet" type="text/css">
+        <link href="{% static "css/responsive.css" %}" rel="stylesheet" type="text/css">
+        <link href="{% static "css/fonts.css" %}" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="{% static "js/jquery-1.12.1.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/jquery.flip.min.js" %}"></script>
+        <!--crousel code-->
+
+        {% block styles %}
+            <script src="{% static "js/owl.carousel.js" %}"></script>
+            <link href="{% static "css/owl.carousel.css" %}" rel="stylesheet">
+            <link href="{% static "css/owl.theme.css" %}" rel="stylesheet">
+            <link href="{% static "css/owl.transitions.css" %}" rel="stylesheet">
+            <!--crousel code-->
+        {% endblock %}
+    </head>
+    <body>
+        {% include "partials/header.html" %}
+        {% block content %}
+        {% endblock %}
+        {% include "partials/footer.html" %}
+    </body>
+</html>

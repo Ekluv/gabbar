@@ -1,0 +1,31 @@
+{% load static %}
+<div class="home_content hdr-con">
+  <div class="row">
+    <div class="logo_wrap">
+      <div class="logo_img"><a href="index.html"><img src="{% static "images/gabbar_logo.png" %}" width="145" alt="" border="0"/></a></div>
+      <div class="menu_icon"><img src="{% static "images/small_menu_icon.png" %}" alt=""/>
+        <div class="small_menu" style="display:none;">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="home_nav">
+        <ul>
+          <li><a href="index.html" class="selected">HOME</a></li>
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+        <div class="log_pop">
+          <a href="{% url 'login' %}"><span class="user_icon"></span>LOGIN</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cf"></div>
+</div>

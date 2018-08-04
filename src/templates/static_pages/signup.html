@@ -1,0 +1,77 @@
+{% extends "static_pages/base.html" %}
+{% load static %}
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'alertify/css/alertify.min.css' %}" />
+{% endblock %}
+{% block content %}
+  <div class="four_section">
+    <div class="row">
+      <div class="titile_four">WELCOME TO OUR MEMBERSHIP
+        <p>Your Personal &amp; Account Information</p>
+      </div>
+    </div>
+  </div>
+  <div class="home_content user_form_main">
+    <div class="row">
+      <div class="user_detail_form">
+        <div class="form_content">
+          <form id="register">
+            <div class="row_wrap">
+              <div class="frm_wrap">
+                <label class="lable_txt">First Name <span class="red_color">*</span></label>
+                <input type="text" class="inp_txt" name="first_name" placeholder="John">
+              </div>
+              <div class="frm_wrap_rg">
+                <label class="lable_txt">Last Name <span class="red_color">*</span></label>
+                <input type="text" class="inp_txt" name="last_name" placeholder="Kelvin">
+              </div>
+            </div>
+            <div class="row_wrap">
+              <div class="frm_wrap">
+                <label class="lable_txt">Mobile Number <span class="red_color">*</span></label>
+                <input type="text" class="inp_txt" name="mobile" placeholder="+91 9891234000">
+              </div>
+              <div class="frm_wrap_rg">
+                <label class="lable_txt">Email <span class="red_color">*</span></label>
+                <input type="text" class="inp_txt" name="email" placeholder="john@kelvin.com">
+              </div>
+            </div>
+            <div class="row_wrap">
+
+
+              <div class="frm_wrap">
+                <label class="lable_txt">Password <span class="red_color">*</span></label>
+                <input type="password" class="inp_txt" name="password" placeholder="*****">
+              </div>
+              <!--<div class="frm_wrap">
+                <label class="lable_txt">Date of Birth <span class="red_color">*</span></label>
+                <select class="select_txt1"><option>Day</option></select>
+                <select class="select_txt2"><option>Months</option></select>
+                <select class="select_txt3"><option>Years</option></select>
+              </div> -->
+              <div class="frm_wrap_rg">
+                <label class="lable_txt">Gender <span class="red_color">*</span></label>
+                <select name="gender" class="gender_select_txt">
+                  <option value="MALE">Male</option>
+                  <option value="FEMALE">Female</option>
+                </select>
+              </div>
+              <!--<div class="frm_wrap">
+                <label class="lable_txt">Uploda Screen shot <span class="red_color">*</span></label>
+                <input type="file" class="inp_txt">
+              </div> -->
+            </div>
+            <div class="frm_wrap2">
+              <button type="submit" class="green_bt bf_flr">Submit</button>
+            </div>
+            <div class="cf"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="cf"></div>
+  </div>
+
+  <script type="text/javascript" src="{% static 'alertify/alertify.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+{% endblock %}
