@@ -15,6 +15,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
+*{margin:0; padding: 0; outline: none;}
 body {
   line-height: 1;
   margin: 0px;
@@ -535,13 +536,18 @@ table {
   padding: 10px;
   font-family: 'Conv_Gotham-Light';
   font-size: 16px;
-  color: #b5b6b6;
+  color: #545555;
   line-height: 22px;
+      transition: all .3s ease-in-out;
   text-decoration: none;
   background: #ffffff;
   border: none;
   margin-bottom: 10px;
   border: #ccc solid 1px;
+  border-radius: 3px;
+}
+.wrap_box .inp_bx:focus{
+border-color: #000;
 }
 a.blue_bt {
 
@@ -615,8 +621,8 @@ a.blue_bt:hover {
 /*all product page css end here*/
 
 /*product details page css start here*/
-
-a.green_bt {
+.center{text-align: center;}
+.green_bt {
   font-family: 'Conv_Gotham-Light';
   font-size: 18px;
   color: #ffffff;
@@ -628,7 +634,7 @@ a.green_bt {
   box-shadow: 2.16px 2.17px 3.31px rgba(255,182,0,0.7);
   transition: all 400ms ease-in-out;
   border:1px solid #fc9401;
-  float: left;
+  display: inline-block;
   margin-bottom: 30px;
 }
 a.green_bt:hover {
@@ -683,6 +689,7 @@ a.green_bt:hover {
 .row_wrap {
   width: 100%;
   float: left;
+  margin-bottom: 38px;
 }
 .frm_wrap {
   width: 415px;
@@ -699,20 +706,27 @@ a.green_bt:hover {
   padding-bottom: 5px;
   display: block;
 }
-.inp_txt {
+.inp_txt{
   font: 14px/18px 'Conv_Gotham-Light';
-  color: #cfcfcf;
+  color: #545555;
   border-radius: 3px;
   border: #cccccc solid 1px;
   padding: 10px 10px;
   width: 394px;
-  margin-bottom: 50px;
+  margin-bottom: 0;
+    transition: all .3s ease-in-out;
 }
+.inp_txt:focus{
+  border-color: #000;
+}
+
 .form-error {
   color: red;
   margin-top: -38px;
   margin-bottom: 20px;
-  display: block;
+  display: inline-block;
+  font: 11px/18px 'Conv_Gotham-Light';
+  font-weight: bold;
 }
 
 .select_txt1 {
@@ -761,6 +775,7 @@ a.green_bt:hover {
   padding: 10px 10px;
   width: 418px;
   margin-bottom: 50px;
+  height: 40px;
 }
 .city_menu {
   font: 14px/18px 'Conv_Gotham-Light';

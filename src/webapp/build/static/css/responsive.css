@@ -1617,6 +1617,10 @@ a.green_bt {font-size: 15px; padding: 14px 30px;margin-bottom: 25px;}
 .frm_wrap_rg {float:none; width:100%;}
 .lable_txt { font-size:16px;}
 .inp_txt { font-size:14px; line-height:22px; margin-bottom:20px; width:92%;}
+.form-error{
+	margin-top: -15px;
+	float: left;
+}
 .select_txt1 { font-size:14px; line-height:22px; width:61px; margin-bottom:20px; margin-right:6px;}
 .select_txt2 { font-size:14px; line-height:22px; width:82px; margin-bottom:20px;}
 .select_txt3 { font-size:14px; line-height:22px; width:97px;margin-bottom:20px;}
