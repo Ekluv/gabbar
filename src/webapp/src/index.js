@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 
 import 'assets/css/material-dashboard-react.css?v=1.2.0';
+import PrivateRoute from 'components/PrivateRoute';
 
 import indexRoutes from 'routes/index.jsx';
 
@@ -22,7 +23,16 @@ ReactDOM.render(
     <Switch>
       <Redirect exact from="/" to="/dashboard" />
       {indexRoutes.map((prop, key) => {
-        return <Route path={prop.path} component={prop.component} key={key} />;
+        return (
+          <PrivateRoute
+            path={prop.path}
+            component={prop.component}
+            key={key}
+            isAllowed={() => window.localStorage.getItem('token')}
+            onNotAllowed={() => window.location = '/'}
+            redirectTo="/account"
+          />
+        );
       })}
     </Switch>
   </Router>

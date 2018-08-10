@@ -1,35 +1,35 @@
 import React from "react";
 import PropTypes from "prop-types";
 // react plugin for creating charts
-import ChartistGraph from "react-chartist";
+// import ChartistGraph from "react-chartist";
 import {
-  ContentCopy,
+  // ContentCopy,
   Store,
-  InfoOutline,
-  Warning,
-  DateRange,
-  LocalOffer,
+  // InfoOutline,
+  // Warning,
+  // DateRange,
+  // LocalOffer,
   Update,
-  ArrowUpward,
-  AccessTime,
+  // ArrowUpward,
+  // AccessTime,
   Accessibility
 } from "@material-ui/icons";
 import { withStyles, Grid } from "material-ui";
 
 import {
   StatsCard,
-  ChartCard,
-  TasksCard,
+  // ChartCard,
+  // TasksCard,
   RegularCard,
   Table,
   ItemGrid
 } from "components";
 
-import {
-  dailySalesChart,
-  emailsSubscriptionChart,
-  completedTasksChart
-} from "variables/charts";
+// import {
+//   dailySalesChart,
+//   emailsSubscriptionChart,
+//   completedTasksChart
+// } from "variables/charts";
 
 import dashboardStyle from "assets/jss/material-dashboard-react/dashboardStyle";
 
@@ -65,7 +65,7 @@ class Dashboard extends React.Component {
               icon={Store}
               iconColor="green"
               title="Wallet"
-              description="$34,245"
+              description="₹0"
               statIcon={Update}
               statText="Just Updated"
             />
@@ -85,7 +85,7 @@ class Dashboard extends React.Component {
               icon={Accessibility}
               iconColor="blue"
               title="You have referred"
-              description="+34,245"
+              description="+0"
               statIcon={Update}
               statText="Just Updated"
             />
@@ -98,18 +98,19 @@ class Dashboard extends React.Component {
           <ItemGrid xs={12} sm={12} md={12}>
             <RegularCard
               headerColor="orange"
-              cardTitle="Employees Stats"
-              cardSubtitle="New employees on 15th September, 2016"
+              cardTitle="Upcoming Events"
+              cardSubtitle="You are already registred for events"
               content={
                 <Table
                   tableHeaderColor="warning"
-                  tableHead={["ID", "Name", "Salary", "Country"]}
-                  tableData={[
-                    ["1", "Dakota Rice", "$36,738", "Niger"],
-                    ["2", "Minerva Hooper", "$23,789", "Curaçao"],
-                    ["3", "Sage Rodriguez", "$56,142", "Netherlands"],
-                    ["4", "Philip Chaney", "$38,735", "Korea, South"]
-                  ]}
+                  tableData={[['No Data']]}
+                  // tableHead={["ID", "Name", "Salary", "Country"]}
+                  // tableData={[
+                  //   ["1", "Dakota Rice", "$36,738", "Niger"],
+                  //   ["2", "Minerva Hooper", "$23,789", "Curaçao"],
+                  //   ["3", "Sage Rodriguez", "$56,142", "Netherlands"],
+                  //   ["4", "Philip Chaney", "$38,735", "Korea, South"]
+                  // ]}
                 />
               }
             />

@@ -13,7 +13,7 @@ import PropTypes from "prop-types";
 import tableStyle from "assets/jss/material-dashboard-react/tableStyle";
 
 function CustomTable({ ...props }) {
-  const { classes, tableHead, tableData, tableHeaderColor } = props;
+  const { classes, tableHead, tableData, tableHeaderColor, noDataMsg } = props;
   return (
     <div className={classes.tableResponsive}>
       <Table className={classes.table}>
