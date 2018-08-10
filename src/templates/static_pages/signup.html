@@ -19,21 +19,21 @@
             <div class="row_wrap">
               <div class="frm_wrap">
                 <label class="lable_txt">First Name <span class="red_color">*</span></label>
-                <input type="text" class="inp_txt" name="first_name" placeholder="John">
+                <input type="text" class="inp_txt" name="first_name" placeholder="John" data-validation="required">
               </div>
               <div class="frm_wrap_rg">
                 <label class="lable_txt">Last Name <span class="red_color">*</span></label>
-                <input type="text" class="inp_txt" name="last_name" placeholder="Kelvin">
+                <input type="text" class="inp_txt" name="last_name" placeholder="Kelvin" data-validation="required">
               </div>
             </div>
             <div class="row_wrap">
               <div class="frm_wrap">
                 <label class="lable_txt">Mobile Number <span class="red_color">*</span></label>
-                <input type="text" class="inp_txt" name="mobile" placeholder="+91 9891234000">
+                <input type="text" class="inp_txt" name="mobile" placeholder="+91 9891234000" data-validation="required">
               </div>
               <div class="frm_wrap_rg">
                 <label class="lable_txt">Email <span class="red_color">*</span></label>
-                <input type="text" class="inp_txt" name="email" placeholder="john@kelvin.com">
+                <input type="text" class="inp_txt" name="email" placeholder="john@kelvin.com" data-validation="email">
               </div>
             </div>
             <div class="row_wrap">
@@ -41,7 +41,7 @@
 
               <div class="frm_wrap">
                 <label class="lable_txt">Password <span class="red_color">*</span></label>
-                <input type="password" class="inp_txt" name="password" placeholder="*****">
+                <input type="password" class="inp_txt" name="password" placeholder="*****" data-validation="required">
               </div>
               <!--<div class="frm_wrap">
                 <label class="lable_txt">Date of Birth <span class="red_color">*</span></label>
@@ -51,9 +51,21 @@
               </div> -->
               <div class="frm_wrap_rg">
                 <label class="lable_txt">Gender <span class="red_color">*</span></label>
-                <select name="gender" class="gender_select_txt">
+                <select name="gender" class="gender_select_txt" data-validation="required">
                   <option value="MALE">Male</option>
                   <option value="FEMALE">Female</option>
+                </select>
+              </div>
+              <div class="frm_wrap_rg">
+                <label class="lable_txt">Profession <span class="red_color">*</span></label>
+                <select name="profession" class="gender_select_txt" data-validation="required">
+                  <option value="">Select</option>
+                  <option value="DIRECTOR">Director</option>
+                  <option value="ACTOR">Actor</option>
+                  <option value="PRODUCER">Producer</option>
+                  <option value="CAMERA_MAN">Camera Man</option>
+                  <option value="SCREENPLAY_WRITER">Screen play Writter</option>
+                  <option value="ASST_DIRECTOR">Asst. Director</option>
                 </select>
               </div>
               <!--<div class="frm_wrap">
@@ -72,6 +84,8 @@
     <div class="cf"></div>
   </div>
 
+  <script type="text/javascript" src="{% static 'js/jquery-form-validator.js' %}"></script>
   <script type="text/javascript" src="{% static 'alertify/alertify.min.js' %}"></script>
   <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+  
 {% endblock %}

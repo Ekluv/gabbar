@@ -19,6 +19,13 @@ class User(AbstractBaseUser, TimeStampedModel):
     MALE = 'MALE'
     FEMALE = 'FEMALE'
 
+    DIRECTOR = 'DIRECTOR'
+    ACTOR = 'ACTOR'
+    PRODUCER = 'PRODUCER'
+    CAMERA_MAN = 'CAMERA_MAN'
+    SCREENPLAY_WRITER = 'SCREENPLAY_WRITER'
+    ASST_DIRECTOR = 'ASST_DIRECTOR'
+
     MODE_OF_PAYMENT = (
         (PAYTM, 'PAYTM'),
         (CASH, 'CASH'),
@@ -29,6 +36,15 @@ class User(AbstractBaseUser, TimeStampedModel):
     GENDER_CHOICES = (
         (MALE, 'MALE'),
         (FEMALE, 'FEMALE')
+    )
+
+    PROFESSION = (
+        (DIRECTOR, 'DIRECTOR'),
+        (ACTOR, 'ACTOR'),
+        (PRODUCER, 'PRODUCER'),
+        (CAMERA_MAN, 'CAMERA_MAN'),
+        (SCREENPLAY_WRITER, 'SCREENPLAY_WRITER'),
+        (ASST_DIRECTOR, 'ASST_DIRECTOR')
     )
 
     email = models.EmailField(
@@ -47,6 +63,7 @@ class User(AbstractBaseUser, TimeStampedModel):
     is_admin = models.BooleanField(default=False) # a superuser
     referral_code = models.CharField(max_length=25)
     referred_by = models.ForeignKey('self', null=True, on_delete=models.SET_NULL)
+    profession = models.CharField(choices=PROFESSION, max_length=255)
     # notice the absence of a "Password field", that's built in.
 
     USERNAME_FIELD = 'email'

@@ -23,5 +23,5 @@ urlpatterns = [
     path('login', TemplateView.as_view(template_name="static_pages/login.html"), name="login"),
     path('v1/account/', include('account.urls', namespace='account_urls')),
     path('admin/', admin.site.urls),
-    re_path(r'^app/.*$', TemplateView.as_view(template_name="index.html"))
+    re_path(r'^app/.*$', TemplateView.as_view(template_name="index.html"), name='dashboard')
 ]

@@ -22,7 +22,8 @@
           <li><a href="contactus.html">CONTACT US</a></li>
         </ul>
         <div class="log_pop">
-          <a href="{% url 'login' %}"><span class="user_icon"></span>LOGIN</a>
+          <a class="login hidden" href="{% url 'login' %}"><span class="user_icon"></span>LOGIN</a>
+          <a class="go-to-dashboard hidden" href="{% url 'dashboard' %}"><span class="user_icon"></span>Go to Dashboard</a>
         </div>
       </div>
     </div>

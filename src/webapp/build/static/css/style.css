@@ -1,0 +1,144 @@
+/* CSS Document */
+
+#warp { 
+height:11500px;
+
+ }
+ 
+ #content-warp {
+	 max-width:900px;
+	 margin:90px auto;
+	 font-size:22px;
+	 line-height:30px;
+	 -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+	 }
+
+.header {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;    
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+.header #logo {
+    display: inline=block;
+    float: left;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header nav {
+    display: inline=block;
+    float: left;
+	margin-right:50px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+	
+}
+.header nav a {
+  
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+	
+}
+.header nav a:hover {
+    
+}
+
+.header.smaller .coupon_nav_main {background:#000000;-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;}
+
+.header.smaller {
+   
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header.smaller #logo {
+    
+    height: 75px;
+    font-size: 25px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header.smaller nav a {
+    
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+@media all and (max-width: 700px) {
+.header {height:200px;} 
+
+}
+
+@media all and (max-width: 660px) {
+.header { height:233px;}
+
+
+    .header #logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        height: auto;
+		line-height:normal;
+        text-align: center;
+    }
+    .header nav {
+        display: block;
+        float: none;
+        height: 50px;
+		line-height:50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .header nav a {
+        line-height: 50px;
+        margin: 0 10px;
+    }
+    .header.smaller {
+        height: 190px;
+    }
+    .header.smaller #logo {
+        height: 40px;
+		line-height: 40px;
+        font-size: 30px;
+    }
+    .header.smaller nav {
+        height: 35px;
+		line-height:35px;
+    }
+    .header.smaller nav a {
+        line-height: 35px;
+    }
+}
+
